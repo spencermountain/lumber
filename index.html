@@ -1,0 +1,30 @@
+<html>
+<head>
+  <style>
+  body{
+    font-family:"Helvetica","Univers","Helvetica Neue",arial,helvetica,sans-serif;
+    font-size:22px;
+    color:#808080;
+  }
+  </style>
+  <script src="./js/jquery.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+  $(document).ready(function(){
+    var socket = io.connect('http://localhost');
+    socket.emit('hi there', { my: 'goodness' });
+
+    socket.on('log', function (data) {
+      console.log(data);
+    });
+
+  });
+  </script>
+</head>
+<body>
+  <div id="header" style="position:relative; width:100px; background:lightsteelblue; color:white; left:30px; top:30px;">
+    listening to frown.log() events..
+  </div>
+  <div id="show" style="position:relative; color:steelblue;">
+  </div>
+</body>

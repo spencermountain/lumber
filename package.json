@@ -1,0 +1,24 @@
+{
+  "author": "Spencer Kelly <spencerwater@gmail.com> (http://spencerwaterbed.com)",
+  "name": "lumber",
+  "description": "view 'console.log' in the browser",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/spencermountain/lumber.git"
+  },
+  "engines": [
+    "node >= 0.10.13"
+  ],
+  "dependencies": {
+    "express":"3.3.4",
+    "sugar":"1.3.9",
+    "mongoose":"*",
+  },
+  "devDependencies": {
+    "grunt":"*"
+  },
+  "bin": {
+    "lumber": "./coffeejs/server.js"
+  },
+}
