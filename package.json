@@ -1,7 +1,7 @@
 {
   "author": "Spencer Kelly <spencerwater@gmail.com> (http://spencerwaterbed.com)",
   "name": "lumber",
-  "description": "view 'console.log' in the browser",
+  "description": "a snappier console.log",
   "version": "0.0.1",
   "repository": {
     "type": "git",
@@ -19,6 +19,6 @@
     "grunt":"*"
   },
   "bin": {
-    "lumber": "./coffeejs/server.js"
+    "lumber": "./coffeejs/index.js"
   },
 }
